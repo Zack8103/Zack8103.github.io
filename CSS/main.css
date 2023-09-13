@@ -18,6 +18,17 @@ body {
   float: left;
   margin-top: 100px;
 }
+
+#nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#nav li {
+  margin: 0;
+}
+
 #banner {
   width: 800px;
   height: 100px;
@@ -40,7 +51,7 @@ body {
 #info {
   width: 100px;
   height: 150px;
-  background-color: gray;
+  background-color: greenyellow;
   float: left;
   margin-top: 100px;
 }
