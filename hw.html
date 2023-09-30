@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的網頁</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* CSS樣式 */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0; /* 清除預設的margin */
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* 固定導航欄 */
+      .navbar {
+        position: sticky; /* 使用sticky屬性 */
+        top: 0; /* 固定在網頁頂部 */
+        left: 0;
+        right: 0;
+        background-color: #007bff; /* 導航欄背景顏色 */
+        overflow: hidden;
+        z-index: 100;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: #fff; /* 導航欄文字顏色 */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .navbar a:hover {
+        background-color: #0056b3; /* 鼠標懸停時的背景顏色 */
+      }
+
+      .banner {
+        background-color: #4caf50; /* 綠色背景顏色 */
+        color: #fff; /* 白色文字顏色 */
+        text-align: center; /* 文字居中 */
+        padding: 20px 0; /* 上下留出間距，更大的Banner */
+        height: 150px; /* 固定Banner高度 */
+      }
+
+      /* 新增的紅色區段樣式 */
+      .section {
+        background-color: #ffaaaa; /* 淺紅色背景顏色 */
+        color: #fff; /* 白色文字顏色 */
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* 標題樣式，與Banner相似 */
+      .section-title {
+        background-color: #ff5555; /* 紅色背景顏色，與Banner相似 */
+        color: #fff; /* 白色文字顏色 */
+        text-align: center; /* 文字居中 */
+        padding: 20px; /* 上下留出間距，更大的標題 */
+        margin-top: 0; /* 移除標題的上邊距 */
+        font-size: 24px; /* 調整字體大小，與Banner相同 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="banner" id="home">
+      <h1>歡迎來到我的網頁</h1>
+    </div>
+
+    <!-- 導航欄 -->
+    <div class="navbar">
+      <a href="#home">首頁</a>
+      <a href="#section1">區段1</a>
+      <a href="#section2">區段2</a>
+      <a href="#section3">區段3</a>
+    </div>
+
+    <div class="container">
+      <!-- 區段1 -->
+      <div class="section" id="section1">
+        <div class="section-title banner">
+          <!-- 使用.banner類別，與Banner相似 -->
+          <h1>區段1標題</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          condimentum auctor velit, nec posuere libero facilisis nec.
+        </p>
+      </div>
+
+      <!-- 區段2 -->
+      <div class="section" id="section2">
+        <div class="section-title banner">
+          <!-- 使用.banner類別，與Banner相似 -->
+          <h1>區段2標題</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          condimentum auctor velit, nec posuere libero facilisis nec.
+        </p>
+      </div>
+
+      <!-- 區段3 -->
+      <div class="section" id="section3">
+        <div class="section-title banner">
+          <!-- 使用.banner類別，與Banner相似 -->
+          <h1>區段3標題</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          condimentum auctor velit, nec posuere libero facilisis nec.
+        </p>
+      </div>
+
+      <button id="myButton">點擊我</button>
+    </div>
+
+    <!-- 引入Bootstrap JavaScript庫的相依性 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+
+    <script>
+      // 平滑滾動效果
+      document.querySelectorAll(".navbar a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          window.scrollTo({
+            top: targetElement.offsetTop - 60 /* 考慮到導航欄高度 */,
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // JavaScript代碼
+      var button = document.getElementById("myButton");
+
+      button.addEventListener("click", function () {
+        alert("你點擊了按鈕！");
+      });
+    </script>
+  </body>
+</html>
