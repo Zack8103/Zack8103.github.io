@@ -1,0 +1,27 @@
+#section1 div:first-child {
+  background-image: url("https://media.istockphoto.com/id/912274822/photo/mt-fuji-and-tokyo-skyline.jpg?s=1024x1024&w=is&k=20&c=h1FIoVs2nU2v9sdJg6Y_Se7asJrb1odV-RoD36BYaIU=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section2 div:first-child {
+  background-image: url("https://media.istockphoto.com/id/482894482/photo/sapporo-cityscape-with-sapporo-tv-tower-in-japan.jpg?s=1024x1024&w=is&k=20&c=z8yybSnNceJEL2Tw8Tv5kqcQK8APULXaIvwTAK0LTWw=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section3 div:first-child {
+  background-image: url("https://media.istockphoto.com/id/1190847220/photo/tokyo-japan-skyline-in-minato-ward-with-the-tower.jpg?s=1024x1024&w=is&k=20&c=7ne-17JTVJ5JvScQQNm2dFrim8sRe-GA3QM6b5JczcM=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section4 div:first-child {
+  background-image: url("https://media.istockphoto.com/id/1343071835/photo/paris-france-high-angle-view-of-eiffel-tower-and-city-skyline-with-autumn-foliage-season.jpg?s=1024x1024&w=is&k=20&c=BMNdI6cOSufb4aYptuoTWyB0oxoD4bOImGgeglKr3qc=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
