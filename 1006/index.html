@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by 黃信維</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>失序的生活</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<style>
+  .bg-img,
+  .bg-img-2 {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
+  }
+
+  .bg-img {
+    background-image: url("https://images.pexels.com/photos/2417730/pexels-photo-2417730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  }
+
+  .bg-img-2 {
+    background-image: url("https://watermark.lovepik.com/photo/50066/6305.jpg_wh1200.jpg");
+  }
+
+  .text-area {
+    height: 75vh;
+    overflow-y: auto;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+  }
+
+  .sticky-div,
+  .sticky-div-2 {
+    position: sticky;
+    top: 0;
+    background-color: lightgrey;
+    z-index: 1;
+  }
+
+  .content-layer {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: -50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 bg-img"></div>
+      <div class="col-md-6 text-area">
+        <h1 id="top">失序的生活</h1>
+        <p>
+          過去的經歷、挑戰與困境，讓我們成為了今天的自己。每個人的生活都有其獨特的節奏和模式，但是當我們感覺生活變得混亂無序時，也許是時候停下來，重新評估並尋找平衡。
+        </p>
+        <p>本文節錄自高堯楷《養心》</p>
+        <a href="#bottom" class="scroll-link">到底</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 sticky-div">
+        <h2>沉浸在混亂中</h2>
+        <p>
+          當你感覺被困在無序的生活中時，嘗試停下來，深呼吸，並尋找那些仍然存在的美好事物。
+        </p>
+      </div>
+      <div class="col-md-8 content-layer">
+        <p>
+          有時，接受混亂並學會在其中找到平衡是很重要的。每一天都是一個新的開始，一個克服混亂和找到幸福的機會。
+        </p>
+        <p id="bottom">記住，即使在最困難的時候，也有可能找到希望和喜悅。</p>
+      </div>
+    </div>
+    <!-- New section -->
+    <div class="row">
+      <div class="col-md-6 bg-img-2"></div>
+      <div class="col-md-6 text-area">
+        <h1 id="top-2">混亂中的秩序</h1>
+        <p>
+          「今天好累，回到家我只想躺在床上玩手機耍廢，想做別的事情，卻放不下手機……」
+          「要面對這麼多人說話，真的讓我很緊張，只要一上臺，我的大腦就會一片空白。」
+          「很多事情擠在一起，要安排事情的輕重緩急又要同時間做完，壓力好大……」
+          「傳了一則訊息到群組裡，卻被大家已讀不回，大家都在想什麼？」
+          面對這個世界，有時候你會想要逃避，感到空虛、沮喪、疲憊、焦慮，
+          於是你委屈自己，迎合別人，直到臨界點才突然爆發……
+          其實，這些都是你無意間讓自己不好過的原因。
+          想要展開美好的新生活，你必須要大膽地改變你的想法，勇敢跨出舒適圈！
+        </p>
+        <p>
+          本文節錄宋曉東《自此刻, 告別你的混亂人生: 拋棄自我懷疑,
+          解決不完美情緒, 接納真實自我, 打造喜歡的生活方式》
+        </p>
+        <a href="#bottom-2" class="scroll-link">到底部</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 sticky-div-2">
+        <h2>在混亂中，尋找內心的平靜</h2>
+        <p>
+          在生活的忙碌與混亂中，尋找一個屬於自己的安靜角落，讓心靈得到休息和恢復，可以說非常重要。
+        </p>
+      </div>
+      <div class="col-md-8 content-layer">
+        <p>
+          通過冥想、瑜伽或者簡單的呼吸練習，我們可以找到內心的平靜，並且學會在生活的波濤洶湧中保持冷靜和清明。
+        </p>
+        <p id="bottom-2">練習冥想，找到內心的平靜，讓生活回歸簡單。</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a.scroll-link").on("click", function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate({
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function() {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+  </script>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
